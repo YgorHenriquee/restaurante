@@ -6,7 +6,37 @@ body {
     margin-bottom: 30px;
 }
 
-.table th, .table td {
+table th, .table td {
     text-align: center;
     vertical-align: middle;
 }
+
+table thead th.col-prato,
+table tbody td.col-prato {
+    width: 50%;
+    color:red;
+}
+
+table thead th.col-preco,
+table tbody td.col-preco {
+    width: 16.67%;
+    text-align: right;
+}
+.table thead th.col-prato,
+.table tbody td.col-prato {
+    width: 50%;
+}
+
+.table thead th.col-preco,
+.table tbody td.col-preco {
+    width: 16.67%;
+    text-align: right;
+}
+
+/* Deixar as linhas de borda transparentes */
+.table,
+.table th,
+.table td {
+    border-color: transparent !important;
+}
+

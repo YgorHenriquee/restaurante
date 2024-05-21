@@ -8,6 +8,41 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+        .table thead th.col-prato,
+.table tbody td.col-prato {
+    width: 50%;
+}
+
+.table thead th.col-preco,
+.table tbody td.col-preco {
+    width: 16.67%;
+    text-align: right;
+}
+
+.table thead th.col-prato,
+.table tbody td.col-prato {
+    width: 50%;
+}
+
+.table thead th.col-preco,
+.table tbody td.col-preco {
+    width: 16.67%;
+    text-align: right;
+}
+
+/* Deixar as linhas de borda transparentes */
+.table,
+.table th,
+.table td {
+    border-color: transparent !important;
+}
+
+/* Tornar o <th> "Prato" transparente */
+    .transparent-th {
+    background-color: rgba(255, 255, 255, 0) !important; /* Ou outra cor com alpha 0 */
+}
+    </style>
 </head>
 <body>
     <!-- Language Selector -->
@@ -22,35 +57,87 @@
         <img src="img/logo.png" alt="Logotipo do Restaurante" class="img-fluid" width="150" height="150">
     </div>
 
-    <!-- Menu -->
-    <div class="container mt-5">
-        <h2 class="text-center">Menu</h2>
-        <table class="table table-bordered mt-3">
-            <thead class="thead-light">
-                <tr>
-                    <th scope="col">Prato</th>
-                    <th scope="col">Dias da Semana</th>
-                    <th scope="col">Sábados</th>
-                    <th scope="col">Domingos e Feriados</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Feijoada</td>
-                    <td>R$ 25,00</td>
-                    <td>R$ 30,00</td>
-                    <td>R$ 35,00</td>
-                </tr>
-                <tr>
-                    <td>Picanha</td>
-                    <td>R$ 45,00</td>
-                    <td>R$ 50,00</td>
-                    <td>R$ 55,00</td>
-                </tr>
-                <!-- Adicione mais pratos conforme necessário -->
-            </tbody>
-        </table>
-    </div>
+ <!-- Menu -->
+<div class="container mt-5">
+    <h2 class="text-center">Menu</h2>
+    <table class="table table-bordered mt-3">
+        <thead class="thead-light">
+            <tr>
+                <th class="col-prato transparent-th" scope="col"></th>
+                <th class="col-preco" scope="col">Dias da Semana</th>
+                <th class="col-preco" scope="col">Sábados</th>
+                <th class="col-preco" scope="col">Domingos e Feriados</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="col-prato">Prato do dia</td>
+                <td class="col-preco">7,50 €</td>
+                <td class="col-preco">8,00 €</td>
+                <td class="col-preco"> 10,00 €</td>
+            </tr>
+            <tr>
+                <td class="col-prato">Bife de Frango</td>
+                <td class="col-preco">7,50 €</td>
+                <td class="col-preco">8,00 €</td>
+                <td class="col-preco"> 10,00 €</td>
+            </tr>
+            <tr>
+                <td class="col-prato">Bife de peru</td>
+                <td class="col-preco">7,50 €</td>
+                <td class="col-preco">8,00 €</td>
+                <td class="col-preco">10,00 €</td>
+            </tr>
+            <tr>
+                <td class="col-prato">Costoleta de porco</td>
+                <td class="col-preco">7,50 €</td>
+                <td class="col-preco"> 8,00 €</td>
+                <td class="col-preco"> 10,00 €</td>
+            </tr>
+            <tr>
+                <td class="col-prato">Alheira c/ovo</td>
+                <td class="col-preco">7,50 €</td>
+                <td class="col-preco"> 8,00 €</td>
+                <td class="col-preco"> 10,00 €</td>
+            </tr>
+            <tr>
+                <td class="col-prato">Filetes de peixe</td>
+                <td class="col-preco">7,50 €</td>
+                <td class="col-preco"> 8,00 €</td>
+                <td class="col-preco">10,00 €</td>
+            </tr>
+            <tr>
+                <td class="col-prato">Naco de carne</td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+            </tr>
+
+            <tr>
+                <td class="col-prato">Picanha</td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+            </tr>
+
+            <tr>
+                <td class="col-prato">Prego no prato</td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+            </tr>
+            <tr>
+                <td class="col-prato">Bacalhau</td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+            </tr>
+            
+            <!-- Adicione mais pratos conforme necessário -->
+        </tbody>
+    </table>
+</div>
+
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
