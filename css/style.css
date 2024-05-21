@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#menu-title {
+    margin-bottom: 30px;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
