@@ -46,9 +46,73 @@
 
     text-align:left;
 }
+
+    .footer {
+        background-color: #e9f2fc;
+        padding: 20px 0;
+        border-top: 1px solid #e7e7e7;
+    }
+
+    .footer h5 {
+        font-weight: bold;
+    }
+
+    .footer p {
+        margin: 0;
+        color: #555;
+    }
+
+    .footer a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    
+    hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  background-color:black;
+}
+
+        .navbar {
+            margin-bottom: 30px;
+        }
+        .section {
+            padding: 60px 0;
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Restaurante</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Pratos">Pratos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Snacks">Snacks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Bebidas">Bebidas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Adicionais">Adicionais</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- Language Selector -->
     <div class="container mt-3">
         <div class="d-flex justify-content-end">
@@ -77,7 +141,7 @@
         </thead>
         <tbody>
             <tr>
-                <td class="col-prato"><b>Menu do dia</b></td>
+                <td class="col-prato"><b>Menu do dia</b><div class="descricao">(Varia, consoante ao dia)</div></td>
                 <td class="col-preco">7,50 €</td>
                 <td class="col-preco">8,00 €</td>
                 <td class="col-preco"> 10,00 €</td>
@@ -163,6 +227,7 @@
 
     <td><div>Observações: Todos pratos incluem (+bebida +sopa +pão +sobremesa +café)</div></td>
     <br><br>
+    <hr>
     <table class="table table-bordered mt-3">
         <thead class="thead-light">
            
@@ -211,7 +276,8 @@
             </tr>
         </tbody>
     </table>
-    <td><div>Observações: Todas Snacks incluem (+bebida +sobremesa +café)</div></td>
+    <td><div>Observações: Todas Snacks incluem (+bebida +sobremesa +café)</div></td><br>
+    <hr>
 <table>
 <br><br><br>
 <table class="table table-bordered mt-3">
@@ -256,8 +322,76 @@
         </tr>
         
 </div>
+</table>
+<hr>
+<br><br><br>
+<table class="table table-bordered mt-3">
+    <thead class="thead-light">
+       
+        <tr>
+            <h1 class="text-center">Adicionais</h1>
+            <th class="col-prato transparent-th" scope="col"></th>
+        
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td class="col-prato"><b>Sopa</b></td>
+            <td class="col-preco">1,75 €</td>
+        </tr>
+
+        <tr>
+            <td class="col-prato"><b>Pão</b></td>
+            <td class="col-preco">0,30 €</td>
+        </tr>
+
+        <tr>
+            <td class="col-prato"><b>Café</b></td>
+            <td class="col-preco">0,70 €</td>
+        </tr>
+
+        <tr>
+            <td class="col-prato"><b>Sobremesa</b></td>
+            <td class="col-preco">1,50 €</td>
+        </tr>
+
+       
+</div>
 
 </table>
+<hr>
+<br><br><br>
+<footer class="footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <p>Telefone 1: (+351) 919 621 239</p>
+                <p>Telefone 2: (+351) 918 080 375</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Guimarães</h5>
+                <p>R. Padre Gaspar Roriz, 78</p>
+                <p>CEP 4800-225</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Redes Sociais</h5>
+                <p>
+                    <a href="https://facebook.com" target="_blank">Facebook</a><br>
+                    <a href="https://instagram.com" target="_blank">Instagram</a><br>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col text-center">
+                <p>&copy; 2024 Restaurante. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 
     <!-- Bootstrap JS and dependencies -->
