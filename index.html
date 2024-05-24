@@ -42,6 +42,10 @@
     .transparent-th {
     background-color: rgba(255, 255, 255, 0) !important; /* Ou outra cor com alpha 0 */
 }
+.text-secund{
+
+    text-align:left;
+}
     </style>
 </head>
 <body>
@@ -59,10 +63,12 @@
 
  <!-- Menu -->
 <div class="container mt-5">
-    <h2 class="text-center">Menu</h2>
+    <h1 class="text-center">Menu</h1><br>
     <table class="table table-bordered mt-3">
         <thead class="thead-light">
+           
             <tr>
+                <h3 class="text-secund">Pratos</h3>
                 <th class="col-prato transparent-th" scope="col"></th>
                 <th class="col-preco" scope="col">Dias da Semana</th>
                 <th class="col-preco" scope="col">Sábados</th>
@@ -71,72 +77,187 @@
         </thead>
         <tbody>
             <tr>
-                <td class="col-prato">Prato do dia</td>
+                <td class="col-prato"><b>Menu do dia</b></td>
                 <td class="col-preco">7,50 €</td>
                 <td class="col-preco">8,00 €</td>
                 <td class="col-preco"> 10,00 €</td>
             </tr>
             <tr>
-                <td class="col-prato">Bife de Frango</td>
-                <td class="col-preco">7,50 €</td>
-                <td class="col-preco">8,00 €</td>
-                <td class="col-preco"> 10,00 €</td>
-            </tr>
+                <td class="col-prato">
+                    <b>Bife de Frango</b>
+                    <div class="descricao">Acompanhamentos: Arroz, Batatas Fritas e salada</div>
+                    <td class="col-preco">7,50 €</td>
+                    <td class="col-preco">8,00 €</td>
+                    <td class="col-preco">10,00 €</td>
+                </td>
+
             <tr>
-                <td class="col-prato">Bife de peru</td>
+                <td class="col-prato">
+                    <b>Bife de peru</b>
+                    <div class="descricao">Acompanhamentos: Arroz, Batatas Fritas e salada</div></td>
                 <td class="col-preco">7,50 €</td>
                 <td class="col-preco">8,00 €</td>
                 <td class="col-preco">10,00 €</td>
             </tr>
             <tr>
-                <td class="col-prato">Costoleta de porco</td>
+                <td class="col-prato"><b>Costoleta de porco</b><div class="descricao">Acompanhamentos: Arroz, Batatas Fritas e salada</div></td>
+                
                 <td class="col-preco">7,50 €</td>
                 <td class="col-preco"> 8,00 €</td>
                 <td class="col-preco"> 10,00 €</td>
             </tr>
             <tr>
-                <td class="col-prato">Alheira c/ovo</td>
+                <td class="col-prato"><b>Alheira c/ovo</b><div class="descricao">Acompanhamentos: Arroz, Batatas Fritas e salada</div></td>
                 <td class="col-preco">7,50 €</td>
                 <td class="col-preco"> 8,00 €</td>
                 <td class="col-preco"> 10,00 €</td>
             </tr>
             <tr>
-                <td class="col-prato">Filetes de peixe</td>
+                <td class="col-prato"><b>Filetes de peixe</b><div class="descricao">Acompanhamentos: Arroz, Batatas Fritas e salada</div></td>
                 <td class="col-preco">7,50 €</td>
                 <td class="col-preco"> 8,00 €</td>
                 <td class="col-preco">10,00 €</td>
             </tr>
             <tr>
-                <td class="col-prato">Naco de carne</td>
+                <td class="col-prato"><b>Entrecosto</b><div class="descricao">Acompanhamentos: Arroz, Batatas Fritas e salada</div></td>
+                <td class="col-preco">7,50 €</td>
+                <td class="col-preco"> 8,00 €</td>
+                <td class="col-preco">10,00 €</td>
+            </tr>
+            <tr>
+                <td class="col-prato"><b>Naco de carne</b><div class="descricao">Acompanhamentos: Arroz, Batatas Fritas e salada</div></td>
                 <td class="col-preco">10,00 €</td>
                 <td class="col-preco">10,00 €</td>
                 <td class="col-preco">10,00 €</td>
             </tr>
 
             <tr>
-                <td class="col-prato">Picanha</td>
+                <td class="col-prato"><b>Costoleta de Vitela</b><div class="descricao">Acompanhamentos: Arroz, Batatas Fritas e salada</div></td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+            </tr>
+
+
+            <tr>
+                <td class="col-prato"><b>Picanha</b><div class="descricao">Acompanhamentos: Arroz, Batatas Fritas e salada</div></td>
                 <td class="col-preco">10,00 €</td>
                 <td class="col-preco">10,00 €</td>
                 <td class="col-preco">10,00 €</td>
             </tr>
 
             <tr>
-                <td class="col-prato">Prego no prato</td>
+                <td class="col-prato"><b>Prego no prato</b><div class="descricao">Acompanhamentos: Arroz, Batatas Fritas e salada</div></td>
                 <td class="col-preco">10,00 €</td>
                 <td class="col-preco">10,00 €</td>
                 <td class="col-preco">10,00 €</td>
             </tr>
             <tr>
-                <td class="col-prato">Bacalhau</td>
+                <td class="col-prato"><b>Bacalhau</b><div class="descricao">Acompanhamentos: Arroz, Batatas Fritas e salada</div></td>
                 <td class="col-preco">10,00 €</td>
                 <td class="col-preco">10,00 €</td>
                 <td class="col-preco">10,00 €</td>
             </tr>
-            
-            <!-- Adicione mais pratos conforme necessário -->
         </tbody>
     </table>
+
+    <td><div>Observações: Todos pratos incluem (+bebida +sopa +pão +sobremesa +café)</div></td>
+    <br><br>
+    <table class="table table-bordered mt-3">
+        <thead class="thead-light">
+           
+            <tr>
+                <h3 class="text-secund">Snacks</h3>
+                <th class="col-prato transparent-th" scope="col"></th>
+                <th class="col-preco" scope="col">Dias da Semana</th>
+                <th class="col-preco" scope="col">Sábados</th>
+                <th class="col-preco" scope="col">Domingos e Feriados</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="col-prato"><b>Cachorro a Vitória</b></td>
+                <td class="col-preco">7,50 €</td>
+                <td class="col-preco">8,00 €</td>
+                <td class="col-preco"> 10,00 €</td>
+            </tr>
+
+            <tr>
+                <td class="col-prato"><b>Francesinha à Vitória</b></td>
+                <td class="col-preco">7,50 €</td>
+                <td class="col-preco"> 8,00 €</td>
+                <td class="col-preco"> 10,00 €</td>
+            </tr>
+
+            <tr>
+                <td class="col-prato"><b>Hamburguer à prato cheio</b></td>
+                <td class="col-preco">7,50 €</td>
+                <td class="col-preco"> 8,00 €</td>
+                <td class="col-preco"> 10,00 €</td>
+            </tr>
+        
+            <tr>
+                <td class="col-prato"><b>Cachorro Especial</b></td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco">10,00 €</td>
+            </tr>
+
+            <tr>
+                <td class="col-prato"><b>Francesinha Especial</b></td>
+                <td class="col-preco">10,00 €</td>
+                <td class="col-preco"> 10,00 €</td>
+                <td class="col-preco"> 10,00 €</td>
+            </tr>
+        </tbody>
+    </table>
+    <td><div>Observações: Todas Snacks incluem (+bebida +sobremesa +café)</div></td>
+<table>
+<br><br><br>
+<table class="table table-bordered mt-3">
+    <thead class="thead-light">
+       
+        <tr>
+            <h1 class="text-center">Bebidas</h1>
+            <th class="col-prato transparent-th" scope="col"></th>
+        
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td class="col-prato"><b>Água (500 ml)</b></td>
+            <td class="col-preco">0,85€</td>
+        </tr>
+
+        <tr>
+            <td class="col-prato"><b>Sumo lata</b></td>
+            <td class="col-preco">1,30 €</td>
+        </tr>
+
+        <tr>
+            <td class="col-prato"><b>Caneca de vinho</b></td>
+            <td class="col-preco">2,00 €</td>
+        </tr>
+
+        <tr>
+            <td class="col-prato"><b>Garrafa de vinho</b></td>
+            <td class="col-preco">2,00 €</td>
+        </tr>
+
+        <tr>
+            <td class="col-prato"><b>Cerveja</b></td>
+            <td class="col-preco">1,50 €</td>
+        </tr>
+
+        <tr>
+            <td class="col-prato"><b>Fino</b></td>
+            <td class="col-preco">1,30 €</td>
+        </tr>
+        
 </div>
+
+</table>
 
 
     <!-- Bootstrap JS and dependencies -->
